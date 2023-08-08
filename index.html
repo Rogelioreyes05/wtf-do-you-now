@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trivia - ¿WTF do you know?</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Trivia - ¿WTF do you know?</h1>
+    </header>
+    <main>
+      <div class="container">
+        <div class="options">
+          <label for="difficulty">Dificultad:</label>
+          <select id="difficulty">
+            <option value="easy">Fácil</option>
+            <option value="medium">Medio</option>
+            <option value="hard">Difícil</option>
+          </select>
+          <label for="type">Tipo de Respuesta:</label>
+          <select id="type">
+            <option value="multiple">Múltiple</option>
+            <option value="boolean">Verdadero/Falso</option>
+          </select>
+          <label for="category">Categoría:</label>
+          <select id="category"></select>
+        </div>
+        <button class="btn" id="startBtn">Comenzar Trivia</button>
+        <button class="btn hidden" id="restartBtn">Reiniciar Trivia</button>
+        <button class="btn hidden" id="nextBtn">Siguiente Pregunta</button>
+        <div class="question-container">
+          <h2 class="question"></h2>
+          <ul class="answers"></ul>
+        </div>
+        <div class="score">
+          <p>Puntaje: <span id="score">0</span></p>
+        </div>
+        <div class="timer">
+          Tiempo restante: <span id="timer">60</span> segundos
+        </div>
+      </div>
+    </main>
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
